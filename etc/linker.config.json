@@ -1,0 +1,21 @@
+{
+	"provideLibs": [	
+		    "libdummy_binary_libfec-rs-x86_64-v2.so.so",
+		    "libdummy_binary_libfec-rs.a-x86_64-v2.so",
+		    "libdummy_binary_libfec-rs.a.so",
+		    "libdummy_binary_libfec-rs.so.so",
+		    "libdummy_ext_fec-x86_64-v2.so",
+		    "libdummy_ext_fec.so",
+		    "libdummy_headers_ext_fec-x86_64-v2.so",
+		    "libdummy_headers_ext_fec.so",
+		    "libdummy_shared_fec-x86_64-v2.so",
+		    "libdummy_shared_fec.so"
+	],
+	"requireLibs": [	
+		    "libc++_shared.so",
+		    "libc.so",
+		    "libdl.so",
+		    "libm.so"
+	],
+	"visible": true
+}

@@ -1,0 +1,42 @@
+// Auto-generated prebuilt Blueprint for external/fec
+// Extracted from Extractive APEX package: org.blisslabs.ag.ext.fec
+
+package {
+    default_applicable_licenses: ["external_fec_license"],
+}
+
+license {
+    name: "external_fec_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-GPL",
+        "SPDX-license-identifier-ISC",
+        "SPDX-license-identifier-LGPL",
+        "SPDX-license-identifier-LGPL-2.1",
+        "SPDX-license-identifier-LGPL-3.0",
+        "SPDX-license-identifier-MIT",
+    ],
+    license_text: [
+        "NOTICE",
+    ],
+}
+
+cc_prebuilt_library {
+    name: "libfec_rs",
+    host_supported: true,
+    ramdisk_available: true,
+    vendor_ramdisk_available: true,
+    recovery_available: true,
+    export_include_dirs: ["include"],
+    static: {
+        srcs: ["lib/libfec_rs.a"],
+    },
+    shared: {
+        srcs: ["lib/libfec_rs.so"],
+    },
+    target: {
+        windows: {
+            enabled: true,
+        },
+    },
+}
